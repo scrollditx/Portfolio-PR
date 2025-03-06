@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    width: 300px;
+    background-color: #040b14;
+    padding: 0 15px;
+}
+
+img {
+    display: block;
+}
+
+header .profile-img img {
+    width: 120px;
+    margin: 15px 0;
+    border: 8px solid #292F37;
+}
+
+header .name h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .media-links a {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #1E242C;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header .media-links a i{
+    transition: background-color 0.3s;
+}
+
+header .media-links a:hover {
+    color: white;
+}
+
+header .media-links a:hover .bi-twitter-x {
+    color: #1DA1F2;
+}
+
+header .media-links a:hover .bi-facebook {
+    color: #1877F2;
+}
+
+header .media-links a:hover .bi-instagram {
+    color: #E4405F;
+}
+
+header .media-links a:hover .bi-skype {
+    color: #00AFF0;
+}
+
+header .media-links a:hover .bi-linkedin {
+    color: #0077B5;
+}
+
+nav ul li a {
+    display: flex;
+    padding: 15px 10px;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+nav ul li a .icon {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:hover .bi-house {
+    color: #149ddd;
+}
+
+nav ul li a:hover .bi-person {
+    color: green;
+}
+
+nav ul li a:hover .bi-file-earmark-text {
+    color: red;
+}
+
+nav ul li a:hover .bi-images {
+    color: purple;
+}
+
+nav ul li a:hover .bi-hdd-stack {
+    color: orange;
+}
+
+nav ul li a:hover .bi-menu-button {
+    color: teal;
+}
+
+nav ul li a:hover .bi-envelope {
+    color: yellow;
+}
