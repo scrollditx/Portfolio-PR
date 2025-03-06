@@ -54,7 +54,7 @@ header .media-links a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header .media-links a i{
+header .media-links a i {
     transition: background-color 0.3s;
 }
 
@@ -96,11 +96,17 @@ nav ul li a .icon {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul {
+    color: rgba(255, 255, 255, 0.599) !important;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
     color: white;
 }
 
-nav ul li a:hover .bi-house {
+nav ul li a:hover .icon,
+nav ul li a.active .icon {
     color: #149ddd;
 }
 
@@ -127,3 +133,77 @@ nav ul li a:hover .bi-menu-button {
 nav ul li a:hover .bi-envelope {
     color: yellow;
 }
+
+main {
+    width: calc(100% - 300px);
+    margin-left: auto;
+}
+
+main .hero .hero-img {
+    background-image: url('../Images/hero-bg.jpg');
+    background-color: #040b144c;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .hero-content h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero .hero-content p {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+
+.hero .hero-content p span {
+    letter-spacing: 2px;
+}
+
+/* About Section's CSS Start */
+.about .content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    /* padding-bottom: 10px; */
+}
+
+.about .content h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #149ddd;
+    margin-top: 20px;
+}
+
+.about .about-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about .about-content .row ul li i {
+    color: #149ddd !important;
+}
+
+/* About Section's CSS End */
+/* Info section's CSS Start */
+.info-section .info-box i{
+    font-size: 45px;
+    color: #149ddd;
+}
+
+.info-section .info-box .count{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.info-section .info-box .count-content{
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    margin-left: 60px;
+}
+/* Info section's CSS End */
