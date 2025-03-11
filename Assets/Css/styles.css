@@ -165,13 +165,19 @@ main .hero .hero-img {
 }
 
 /* About Section's CSS Start */
-.about .content h2 {
+.about .content h2,
+.contact .content h2,
+.services .content h2 {
     font-size: 32px;
     font-weight: 700;
     /* padding-bottom: 10px; */
 }
 
-.about .content h2::after {
+.about .content h2::after,
+.skills .content h2::after,
+.resume .content h2::after,
+.contact .content h2::after,
+.services .content h2::after {
     content: "";
     display: block;
     width: 50px;
@@ -191,19 +197,196 @@ main .hero .hero-img {
 
 /* About Section's CSS End */
 /* Info section's CSS Start */
-.info-section .info-box i{
+.info-section .info-box i {
     font-size: 45px;
     color: #149ddd;
 }
 
-.info-section .info-box .count{
+.info-section .info-box .count {
     font-size: 48px;
     font-weight: 700;
 }
 
-.info-section .info-box .count-content{
+.info-section .info-box .count-content {
     font-size: 15px;
     font-family: "Raleway", sans-serif;
     margin-left: 60px;
 }
+
 /* Info section's CSS End */
+
+/* Skills section's CSS Start */
+.skills {
+    background-color: #f4fafd;
+}
+
+.skills .content h2,
+.resume .content h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.skills .progress-bar {
+    background-color: #149ddd;
+}
+
+.skills .progress-box {
+    height: 62px;
+}
+
+.skills .progress-box .progress-count span {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Skills section's CSS End */
+
+/* Resume section's CSS Start */
+.resume .title h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.resume .resume-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #464e57;
+}
+
+.resume .resume-box {
+    border-left: 2px solid #149ddd;
+    /* padding: 0 0 20px 20px; */
+    /* margin-top: -2px; */
+}
+
+.resume .resume-box::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #149ddd;
+    background-color: white;
+    top: 0;
+    left: -9px;
+}
+
+.resume .resume-box h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Resume section's CSS End */
+
+/* services section start */
+/* services section start  */
+
+.services .services-count .count i {
+    width: 60px;
+    height: 60px;
+    background: #149DDD;
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--theme-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.services .services-count .count:hover i {
+    background-color: #fff;
+    border: 1px solid #149DDD;
+    color: #040b14;
+}
+
+.services .services-count .count .services-count-content h4 a {
+    text-decoration: none;
+    color: #040b14;
+    transition: all .3s ease-in-out;
+}
+
+.services .services-count .count:hover .services-count-content h4 a {
+    color: #149DDD;
+}
+
+/* services section end */
+
+/* testimonial start  */
+.test-content {
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+/* testimonial end  */
+
+/* Contact section's CSS start */
+
+.contact .info-box-item {
+    margin-bottom: 40px;
+}
+
+.contact .info-box-item i {
+    font-size: 20px;
+    color: #149ddd;
+    background-color: rgba(20, 157, 221, 0.08);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact .info-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contact .info-content p {
+    font-size: 14px;
+}
+
+.contact .info-box-item:hover i {
+    background-color: #149DDD;
+    color: white;
+}
+
+/* Contact section's CSS end */
+/* footer section's CSS start */
+footer {
+    width: calc(100% - 300px);
+    margin-left: auto;
+
+}
+
+footer .copy-right p,
+footer .designed-by p {
+    font-size: 14px
+}
+
+/* footer section's CSS end */
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #149ddd;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top:hover {
+    background-color: #1280b4;
+    transform: translateY(-3px);
+}
