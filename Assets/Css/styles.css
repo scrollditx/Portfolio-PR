@@ -100,38 +100,45 @@ nav ul {
     color: rgba(255, 255, 255, 0.599) !important;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: white;
-}
 
-nav ul li a:hover .icon,
-nav ul li a.active .icon {
+nav ul li a:hover .bi-house,
+nav ul li a.active .bi-house {
     color: #149ddd;
 }
 
-nav ul li a:hover .bi-person {
+nav ul li a:hover .bi-person,
+nav ul li a.active .bi-person {
     color: green;
 }
 
-nav ul li a:hover .bi-file-earmark-text {
+nav ul li a:hover .bi-file-earmark-text,
+nav ul li a.active .bi-file-earmark-text {
     color: red;
 }
 
-nav ul li a:hover .bi-images {
+nav ul li a:hover .bi-images,
+nav ul li a.active .bi-images {
     color: purple;
 }
 
-nav ul li a:hover .bi-hdd-stack {
+nav ul li a:hover .bi-hdd-stack,
+nav ul li a.active .bi-hdd-stack {
     color: orange;
 }
 
-nav ul li a:hover .bi-menu-button {
+nav ul li a:hover .bi-menu-button,
+nav ul li a.active .bi-menu-button {
     color: teal;
 }
 
-nav ul li a:hover .bi-envelope {
+nav ul li a:hover .bi-envelope,
+nav ul li a.active .bi-envelope {
     color: yellow;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
 }
 
 main {
@@ -167,7 +174,9 @@ main .hero .hero-img {
 /* About Section's CSS Start */
 .about .content h2,
 .contact .content h2,
-.services .content h2 {
+.services .content h2,
+.testimonials .content h2,
+.portfolio .content h2 {
     font-size: 32px;
     font-weight: 700;
     /* padding-bottom: 10px; */
@@ -177,7 +186,9 @@ main .hero .hero-img {
 .skills .content h2::after,
 .resume .content h2::after,
 .contact .content h2::after,
-.services .content h2::after {
+.services .content h2::after,
+.testimonials .content h2::after,
+.portfolio .content h2::after {
     content: "";
     display: block;
     width: 50px;
@@ -278,17 +289,101 @@ main .hero .hero-img {
 }
 
 /* Resume section's CSS End */
+/* Portfolio Styles */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.portfolio-item img {
+    transition: all 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-icons {
+    margin-bottom: 1rem;
+}
+
+.portfolio-icons .btn {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.portfolio-icons .btn:hover {
+    background-color: #149ddd;
+    color: white;
+}
+
+.badge {
+    z-index: 1;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Modal Styles */
+.modal-content {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.btn-close {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.carousel-item img {
+    max-height: 90vh;
+    width: auto;
+    margin: 0 auto;
+}
 
 /* services section start */
 /* services section start  */
 
-.services .services-count .count i {
-    width: 60px;
-    height: 60px;
+.services .box-content h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .boxes .icon i {
+    width: 50px;
+    height: 50px;
     background: #149DDD;
     border-radius: 50%;
     font-size: 24px;
-    color: var(--theme-white);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,28 +392,40 @@ main .hero .hero-img {
     transition: 0.5s;
 }
 
-.services .services-count .count:hover i {
+.services .boxes .icon:hover i {
     background-color: #fff;
     border: 1px solid #149DDD;
-    color: #040b14;
+    color: #149DDD;
 }
 
-.services .services-count .count .services-count-content h4 a {
+.services .boxes .icon .box-content h4 a {
     text-decoration: none;
     color: #040b14;
     transition: all .3s ease-in-out;
 }
 
-.services .services-count .count:hover .services-count-content h4 a {
+.services .boxes .icon:hover .box-content a {
     color: #149DDD;
 }
 
 /* services section end */
 
 /* testimonial start  */
-.test-content {
+
+.testimonial-content {
     text-align: justify;
     padding: 10px 20px;
+}
+
+.testimonials .container .text-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+
+.testimonials .container .text-content h4 {
+    font-size: 14px;
+    font-weight: medium;
 }
 
 /* testimonial end  */
@@ -359,12 +466,6 @@ main .hero .hero-img {
 
 /* Contact section's CSS end */
 /* footer section's CSS start */
-footer {
-    width: calc(100% - 300px);
-    margin-left: auto;
-
-}
-
 footer .copy-right p,
 footer .designed-by p {
     font-size: 14px
