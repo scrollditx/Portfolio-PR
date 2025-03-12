@@ -6,26 +6,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index - iPortfolio Bootstrap Template</title>
-    <!--! Favicon Attachment -->
+    <!-- External Resources -->
     <link rel="icon" href="./Assets/Images/favicon.png" />
-    <!--! Font Attachment CDN -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!--! Bootstrap File Attachment -->
+    <!-- Core Stylesheets -->
     <link rel="stylesheet" href="./Assets/Css/bootstrap.min.css" />
     <link rel="stylesheet" href="./Assets/Bt_Icons/bootstrap-icons.min.css" />
-    <!--! Custom CSS File Attachment -->
     <link rel="stylesheet" href="./Assets/Css/styles.css" />
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <!--! Body Start -->
-
   <body>
-    <!--! Header Start -->
+    <!-- Header Start -->
     <header
       class="header position-fixed top-0 start-0 bottom-0 h-100 overflow-y-scroll"
     >
+      <!-- Profile Section -->
       <div class="profile-img">
         <img
           src="./Assets/Images/my-profile-img.jpg"
@@ -33,12 +32,14 @@
           alt="profile-img"
         />
       </div>
+      <!-- Name & Social Links -->
       <a
         href="index.html"
         class="name d-block text-center text-decoration-none text-white m-0 mb-3"
       >
         <h1>Alex Smith</h1>
       </a>
+      <!-- Social Media Links -->
       <div class="media-links text-center mb-3">
         <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
@@ -46,6 +47,7 @@
         <a href="#" class="text-white"><i class="bi bi-skype"></i></a>
         <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
       </div>
+      <!-- Navigation Menu -->
       <nav>
         <ul class="list-unstyled pb-4">
           <li>
@@ -86,11 +88,9 @@
         </ul>
       </nav>
     </header>
-    <!--! Header End -->
-    <!--! Main Start  -->
-    <main>
-      <!--! Hero's Section Start -->
-      <section id="home" class="hero">
+    <main class="overflow-hidden">
+      <!-- Hero's Section Start -->
+      <section id="home" class="hero" data-aos="fade-up">
         <div
           class="hero-img vh-100 d-flex align-items-center justify-content-center"
         >
@@ -109,35 +109,46 @@
           </div>
         </div>
       </section>
-      <!--! Hero's Section End -->
-      <!--! About Section Start -->
-      <section id="about" class="about py-5">
+      <!-- About Section Start -->
+      <section id="about" class="about py-5" data-aos="fade-up">
         <div class="container content px-2 pb-5">
-          <h2 class="position-relative">About</h2>
-          <p class="mt-4">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
-        </div>
-        <div class="container">
+          <!-- Header -->
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-lg-8">
+              <h2 class="position-relative">About</h2>
+              <p class="mt-4">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Image Column -->
+            <div class="col-12 col-md-4">
               <img
                 src="./Assets/Images/my-profile-img.jpg"
                 alt="profile-img"
-                class="img-fluid"
+                class="img-fluid rounded"
               />
             </div>
-            <div class="col-md-8 about-content">
+
+            <!-- Content Column -->
+            <div class="col-12 col-md-8 about-content">
               <h2>UI/UX Designer & Web Developer.</h2>
               <p class="fst-italic py-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <div class="row">
-                <div class="col-md-6">
+
+              <!-- Info Grid -->
+              <div class="row gy-3">
+                <!-- Left Column -->
+                <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
                     <li class="d-flex align-items-center mb-4">
                       <i class="bi bi bi-chevron-right me-1"></i>
@@ -161,7 +172,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-6">
+
+                <!-- Right Column -->
+                <div class="col-12 col-sm-6">
                   <ul class="list-unstyled">
                     <li class="d-flex align-items-center mb-4">
                       <i class="bi bi bi-chevron-right me-1"></i>
@@ -186,6 +199,7 @@
                   </ul>
                 </div>
               </div>
+
               <p class="py-2">
                 Officiis eligendi itaque labore et dolorum mollitia officiis
                 optio vero. Quisquam sunt adipisci omnis et ut. Nulla
@@ -197,68 +211,101 @@
           </div>
         </div>
       </section>
-      <!--! About Section End -->
-      <!--! Info Section Start -->
-      <section class="info-section">
+      <!-- Info Section Start -->
+      <section class="info-section py-5" data-aos="fade-up">
         <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="info-box p-4">
+          <div class="row g-4">
+            <!-- Column 1 -->
+            <div
+              class="col-12 col-sm-6 col-md-3"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="info-box p-4 h-100 bg-white shadow-sm">
                 <i class="bi bi-emoji-smile"></i>
                 <span class="count ms-3">232</span>
-                <p class="count-content text-muted">
+                <p class="count-content text-muted mb-0">
                   <strong>Happy Clients</strong>
-                  <span>consequuntur quae</span>
+                  <span class="d-block">consequuntur quae</span>
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="info-box p-4">
+
+            <!-- Column 2 -->
+            <div
+              class="col-12 col-sm-6 col-md-3"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="info-box p-4 h-100 bg-white shadow-sm">
                 <i class="bi bi-journal-richtext"></i>
                 <span class="count ms-3">521</span>
-                <p class="count-content text-muted">
+                <p class="count-content text-muted mb-0">
                   <strong>Projects</strong>
-                  <span>adipisci atque cum quia aut</span>
+                  <span class="d-block">adipisci atque cum quia aut</span>
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="info-box p-4">
+
+            <!-- Column 3 -->
+            <div
+              class="col-12 col-sm-6 col-md-3"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="info-box p-4 h-100 bg-white shadow-sm">
                 <i class="bi bi-headset"></i>
-                <span class="count ms-3"> 1453</span>
-                <p class="count-content text-muted">
+                <span class="count ms-3">1453</span>
+                <p class="count-content text-muted mb-0">
                   <strong>Hours Of Support</strong>
-                  <span>aut commodi quaerat</span>
+                  <span class="d-block">aut commodi quaerat</span>
                 </p>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="info-box p-4">
+
+            <!-- Column 4 -->
+            <div
+              class="col-12 col-sm-6 col-md-3"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="info-box p-4 h-100 bg-white shadow-sm">
                 <i class="bi bi-people"></i>
-                <span class="count ms-3"> 32</span>
-                <p class="count-content text-muted">
+                <span class="count ms-3">32</span>
+                <p class="count-content text-muted mb-0">
                   <strong>Hard Workers</strong>
-                  <span>rerum asperiores dolor</span>
+                  <span class="d-block">rerum asperiores dolor</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--! Info Section End -->
-      <!--! Skills Section Start  -->
-      <section class="skills py-5">
+      <!-- Skills Section Start  -->
+      <section class="skills py-5" data-aos="fade-up">
         <div class="container">
-          <div class="content">
-            <h2>Skills</h2>
-            <p class="mt-4">
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-              consectetur velit
-            </p>
-          </div>
+          <!-- Header -->
           <div class="row">
-            <div class="col-md-6 py-4">
-              <div class="progress-box">
+            <div class="col-12 col-lg-8">
+              <div class="content">
+                <h2>Skills</h2>
+                <p class="mt-4">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                  sint consectetur velit
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progress Bars -->
+          <div class="row gy-4">
+            <!-- Left Column -->
+            <div
+              class="col-12 col-md-6 py-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="progress-box mb-4">
                 <div
                   class="progress-count d-flex justify-content-between"
                   style="margin-bottom: 6px"
@@ -274,7 +321,7 @@
                   <div class="progress-bar" style="width: 100%"></div>
                 </div>
               </div>
-              <div class="progress-box">
+              <div class="progress-box mb-4">
                 <div
                   class="progress-count d-flex justify-content-between"
                   style="margin-bottom: 6px"
@@ -307,8 +354,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 py-4">
-              <div class="progress-box">
+
+            <!-- Right Column -->
+            <div
+              class="col-12 col-md-6 py-4"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <div class="progress-box mb-4">
                 <div
                   class="progress-count d-flex justify-content-between"
                   style="margin-bottom: 6px"
@@ -324,12 +377,12 @@
                   <div class="progress-bar" style="width: 80%"></div>
                 </div>
               </div>
-              <div class="progress-box">
+              <div class="progress-box mb-4">
                 <div
                   class="progress-count d-flex justify-content-between"
                   style="margin-bottom: 6px"
                 >
-                  <span>WordPress/CMS90</span>
+                  <span>WORDPRESS/CMS</span>
                   <span>90%</span>
                 </div>
                 <div
@@ -345,7 +398,7 @@
                   class="progress-count d-flex justify-content-between"
                   style="margin-bottom: 6px"
                 >
-                  <span>Photoshop</span>
+                  <span>PHOTOSHOP</span>
                   <span>55%</span>
                 </div>
                 <div
@@ -360,22 +413,29 @@
           </div>
         </div>
       </section>
-      <!--! Skills Section End  -->
-      <!--! Resume Section Start  -->
+      <!-- Resume Section Start  -->
       <section id="resume" class="resume py-5">
         <div class="container">
-          <div class="content pb-5">
-            <h2>Resume</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+          <!-- Header Section -->
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="content pb-5">
+                <h2>Resume</h2>
+                <p>
+                  Magnam dolores commodi suscipit. Necessitatibus eius
+                  consequatur ex aliquid fuga eum quidem. Sit sint consectetur
+                  velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                  suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                  quidem hic quas.
+                </p>
+              </div>
+            </div>
           </div>
+
           <div class="container">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row gy-4">
+              <!-- Left Column -->
+              <div class="col-12 col-md-6">
                 <div class="title pb-2">
                   <h3>Summary</h3>
                 </div>
@@ -393,6 +453,7 @@
                     <li class="pb-2">alice.barkley@example.com</li>
                   </ul>
                 </div>
+
                 <div class="title my-3">
                   <h3>Education</h3>
                 </div>
@@ -410,6 +471,7 @@
                     dignissimos deleniti nerada porti sand markend.
                   </p>
                 </div>
+
                 <div class="resume-box px-3 position-relative pt-3">
                   <h4 class="text-uppercase">
                     Bachelor of Fine Arts & Graphic Design
@@ -426,7 +488,9 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
+
+              <!-- Right Column -->
+              <div class="col-12 col-md-6">
                 <div class="title pb-2">
                   <h3>Professional Experience</h3>
                 </div>
@@ -455,6 +519,7 @@
                     </li>
                   </ul>
                 </div>
+
                 <div class="resume-box px-3 position-relative">
                   <h4 class="text-uppercase">Graphic design specialist</h4>
                   <h5 class="px-3 py-1">2017 - 2018</h5>
@@ -486,9 +551,8 @@
           </div>
         </div>
       </section>
-      <!--! Resume Section End  -->
-      <!--! Portfolio section Start  -->
-      <section id="portfolio" class="portfolio py-5">
+      <!-- Portfolio section Start  -->
+      <section id="portfolio" class="portfolio py-5" data-aos="fade-up">
         <div class="container">
           <div class="content mb-5">
             <h2>Portfolio</h2>
@@ -500,12 +564,16 @@
 
           <div class="row">
             <!-- Portfolio Item 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/app-1.jpg"
                   class="img-fluid"
-                  alt="Portfolio 1"
+                  alt="app-1"
                 />
                 <span
                   class="badge rounded-0 position-absolute top-0 start-0 m-3"
@@ -532,17 +600,21 @@
             </div>
 
             <!-- Portfolio Item 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/product-1.jpg"
                   class="img-fluid"
-                  alt="Portfolio 2"
+                  alt="product-1"
                 />
                 <span
                   class="badge rounded-0 position-absolute top-0 start-0 m-3"
                   style="background-color: #149ddd"
-                  >Product 2</span
+                  >Product 1</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -564,16 +636,20 @@
             </div>
 
             <!-- Portfolio Item 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/branding-1.jpg"
                   class="img-fluid"
-                  alt="Portfolio 3"
+                  alt="branding-1"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 3</span
+                  >Branding 1</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -589,22 +665,26 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 3 Description</p>
+                  <p class="text-white mb-0">Branding 1 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 4 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/books-1.jpg"
                   class="img-fluid"
-                  alt="Portfolio 1"
+                  alt="books-1"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 1</span
+                  >Book 1</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -620,18 +700,22 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 1 Description</p>
+                  <p class="text-white mb-0">Book 1 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 5 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/app-2.jpg"
                   class="img-fluid"
-                  alt="Portfolio 2"
+                  alt="app-2"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
@@ -657,16 +741,20 @@
             </div>
 
             <!-- Portfolio Item 6 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/product-2.jpg"
                   class="img-fluid"
-                  alt="Portfolio 3"
+                  alt="product-2"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 3</span
+                  >Product 2</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -682,22 +770,26 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 3 Description</p>
+                  <p class="text-white mb-0">Product 2 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 7 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/branding-2.jpg"
                   class="img-fluid"
-                  alt="Portfolio 1"
+                  alt="branding-2"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 1</span
+                  >Branding 2</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -713,22 +805,26 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 1 Description</p>
+                  <p class="text-white mb-0">Branding 2 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 8 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/books-2.jpg"
                   class="img-fluid"
-                  alt="Portfolio 2"
+                  alt="books-2"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 2</span
+                  >Book 2</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -744,18 +840,22 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 2 Description</p>
+                  <p class="text-white mb-0">Book 2 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 9 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/app-3.jpg"
                   class="img-fluid"
-                  alt="Portfolio 3"
+                  alt="app-3"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
@@ -781,16 +881,20 @@
             </div>
 
             <!-- Portfolio Item 10 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/product-3.jpg"
                   class="img-fluid"
-                  alt="Portfolio 1"
+                  alt="product-3"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 1</span
+                  >Product 3</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -806,22 +910,26 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 1 Description</p>
+                  <p class="text-white mb-0">Product 3 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 11 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/branding-3.jpg"
                   class="img-fluid"
-                  alt="Portfolio 2"
+                  alt="branding-3"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 2</span
+                  >Branding 3</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -837,22 +945,26 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 2 Description</p>
+                  <p class="text-white mb-0">Branding 3 Description</p>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Item 12 -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div
+              class="col-lg-4 col-md-6 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <div class="portfolio-item position-relative">
                 <img
                   src="./Assets/Images/books-3.jpg"
                   class="img-fluid"
-                  alt="Portfolio 3"
+                  alt="books-3"
                 />
                 <span
                   class="badge position-absolute top-0 start-0 m-3 bg-primary"
-                  >App 3</span
+                  >Book 3</span
                 >
                 <div class="portfolio-overlay">
                   <div class="portfolio-icons">
@@ -868,7 +980,7 @@
                       <i class="bi bi-link-45deg"></i>
                     </a>
                   </div>
-                  <p class="text-white mb-0">App 3 Description</p>
+                  <p class="text-white mb-0">Book 3 Description</p>
                 </div>
               </div>
             </div>
@@ -934,26 +1046,34 @@
           </div>
         </div>
       </div>
-      <!--! Portfolio section End  -->
-      <!--! Services section Start  -->
-      <section id="services" class="services py-5">
+      <!-- Services section Start  -->
+      <section id="services" class="services py-5" data-aos="fade-up">
         <div class="container">
-          <div class="content pb-5">
-            <h2>Services</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+          <!-- Section Header -->
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="content pb-5">
+                <h2>Services</h2>
+                <p>
+                  Magnam dolores commodi suscipit. Necessitatibus eius
+                  consequatur ex aliquid fuga eum quidem.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container">
+
+          <!-- Services Grid -->
           <div class="row gy-4">
-            <div class="col-md-12">
+            <!-- First Row -->
+            <div class="col-12">
               <div class="boxes">
-                <div class="row mb-4">
-                  <div class="col-md-4">
+                <div class="row g-4">
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <!-- Existing service box structure -->
                     <div class="icon d-flex">
                       <i class="bi bi-briefcase"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -973,7 +1093,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <!-- Existing service box structure -->
                     <div class="icon d-flex">
                       <i class="bi bi-card-checklist"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -993,7 +1119,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <!-- Existing service box structure -->
                     <div class="icon d-flex">
                       <i class="bi bi-bar-chart"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -1013,7 +1145,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <!-- Existing service box structure -->
                     <div class="icon d-flex">
                       <i class="bi bi-binoculars"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -1033,7 +1171,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
+                    <!-- Existing service box structure -->
                     <div class="icon d-flex">
                       <i class="bi bi-brightness-high"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -1053,7 +1197,12 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+
+                  <div
+                    class="col-12 col-sm-6 col-lg-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
                     <div class="icon d-flex">
                       <i class="bi bi-calendar4-week"></i>
                       <div class="box-content ms-3 mb-3 fs-6">
@@ -1079,191 +1228,240 @@
           </div>
         </div>
       </section>
-      <!--! Services section End  -->
-      <!--! Testimonials section Start -->
-      <section class="testimonials">
+      <!-- Testimonials section Start -->
+      <section class="testimonials py-5" data-aos="fade-up">
         <div class="container">
-          <div class="content">
-            <h2>Testimonials</h2>
-            <p>
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-              consectetur velit
-            </p>
+          <!-- Section Header -->
+          <div class="row mb-5">
+            <div class="col-lg-8">
+              <div class="content">
+                <h2 class="mb-3">Testimonials</h2>
+                <p class="text-muted">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                  sint consectetur velit
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="testimonial-content rounded-3 bg-white shadow position-relative"
-              >
-                <p class="fs-6">
-                  <i
-                    class="bi bi-quote quote-icon-left fs-5"
-                    style="color: #149ddd"
-                  ></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sine.
-                  <i
-                    class="bi bi-quote quote-icon-right fs-5 d-inline-block"
-                    style="color: #149ddd; transform: rotate(180deg)"
-                  ></i>
-                </p>
-                <span
-                  class="position-absolute top-100 start-50 translate-middle"
+
+          <!-- Testimonials Cards -->
+          <div class="row gy-4">
+            <!-- Testimonial 1 -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="h-100">
+                <div
+                  class="testimonial-content p-4 rounded-3 bg-white shadow position-relative mb-4"
                 >
-                  <i class="bi bi-caret-down-fill fs-1 text-white"></i>
-                </span>
-              </div>
-              <div class="d-block mt-4">
-                <div class="col-4 mx-auto">
-                  <img
-                    class="img-fluid rounded-circle"
-                    src="./Assets/Images/testimonials-3.jpg"
-                    alt=""
-                  />
+                  <p class="fs-6 mb-0">
+                    <i
+                      class="bi bi-quote quote-icon-left fs-5 me-2"
+                      style="color: #149ddd"
+                    ></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sine.
+                    <i
+                      class="bi bi-quote quote-icon-right fs-5 ms-2 d-inline-block"
+                      style="color: #149ddd; transform: rotate(180deg)"
+                    ></i>
+                  </p>
+                  <span
+                    class="position-absolute top-100 start-50 translate-middle"
+                  >
+                    <i class="bi bi-caret-down-fill fs-1 text-white"></i>
+                  </span>
                 </div>
-                <div class="text-content text-center mt-3">
-                  <h3>Jena Karlis</h3>
-                  <h4 class="text-black-50">Store Owner</h4>
+
+                <!-- Profile -->
+                <div class="text-center mt-5">
+                  <div class="col-4 col-sm-3 mx-auto mb-3">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="./Assets/Images/testimonials-3.jpg"
+                      alt="Jena Karlis"
+                    />
+                  </div>
+                  <h3 class="fs-5 mb-1">Jena Karlis</h3>
+                  <p class="text-black-50 mb-0">Store Owner</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="testimonial-content rounded-3 bg-white shadow position-relative"
-              >
-                <p class="fs-6">
-                  <i
-                    class="bi bi-quote quote-icon-left fs-5"
-                    style="color: #149ddd"
-                  ></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sine.
-                  <i
-                    class="bi bi-quote quote-icon-right fs-5 d-inline-block"
-                    style="color: #149ddd; transform: rotate(180deg)"
-                  ></i>
-                </p>
-                <span
-                  class="position-absolute top-100 start-50 translate-middle"
+
+            <!-- Testimonial 2 -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="h-100">
+                <div
+                  class="testimonial-content p-4 rounded-3 bg-white shadow position-relative mb-4"
                 >
-                  <i class="bi bi-caret-down-fill fs-1 text-white"></i>
-                </span>
-              </div>
-              <div class="d-block mt-4">
-                <div class="col-4 mx-auto">
-                  <img
-                    class="img-fluid rounded-circle"
-                    src="./Assets/Images/testimonials-2.jpg"
-                    alt=""
-                  />
+                  <p class="fs-6 mb-0">
+                    <i
+                      class="bi bi-quote quote-icon-left fs-5 me-2"
+                      style="color: #149ddd"
+                    ></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sine.
+                    <i
+                      class="bi bi-quote quote-icon-right fs-5 ms-2 d-inline-block"
+                      style="color: #149ddd; transform: rotate(180deg)"
+                    ></i>
+                  </p>
+                  <span
+                    class="position-absolute top-100 start-50 translate-middle"
+                  >
+                    <i class="bi bi-caret-down-fill fs-1 text-white"></i>
+                  </span>
                 </div>
-                <div class="text-content text-center mt-3">
-                  <h3>Sara Wilsson</h3>
-                  <h4 class="text-black-50">Designer</h4>
+
+                <!-- Profile -->
+                <div class="text-center mt-5">
+                  <div class="col-4 col-sm-3 mx-auto mb-3">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="./Assets/Images/testimonials-2.jpg"
+                      alt="Sara Wilsson"
+                    />
+                  </div>
+                  <h3 class="fs-5 mb-1">Sara Wilsson</h3>
+                  <p class="text-black-50 mb-0">Designer</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div
-                class="testimonial-content rounded-3 bg-white shadow position-relative"
-              >
-                <p class="fs-6">
-                  <i
-                    class="bi bi-quote quote-icon-left fs-5"
-                    style="color: #149ddd"
-                  ></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sine.
-                  <i
-                    class="bi bi-quote quote-icon-right fs-5 d-inline-block"
-                    style="color: #149ddd; transform: rotate(180deg)"
-                  ></i>
-                </p>
-                <span
-                  class="position-absolute top-100 start-50 translate-middle"
+
+            <!-- Testimonial 3 -->
+            <div
+              class="col-12 col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="h-100">
+                <div
+                  class="testimonial-content p-4 rounded-3 bg-white shadow position-relative mb-4"
                 >
-                  <i class="bi bi-caret-down-fill fs-1 text-white"></i>
-                </span>
-              </div>
-              <div class="d-block mt-4">
-                <div class="col-4 mx-auto">
-                  <img
-                    class="img-fluid rounded-circle"
-                    src="./Assets/Images/testimonials-1.jpg"
-                    alt=""
-                  />
+                  <p class="fs-6 mb-0">
+                    <i
+                      class="bi bi-quote quote-icon-left fs-5 me-2"
+                      style="color: #149ddd"
+                    ></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sine.
+                    <i
+                      class="bi bi-quote quote-icon-right fs-5 ms-2 dinl"
+                      style="color: #149ddd; transform: rotate(180deg)"
+                    ></i>
+                  </p>
+                  <span
+                    class="position-absolute top-100 start-50 translate-middle"
+                  >
+                    <i class="bi bi-caret-down-fill fs-1 text-white"></i>
+                  </span>
                 </div>
-                <div class="text-content text-center mt-3">
-                  <h3>Saul Goodman</h3>
-                  <h4 class="text-black-50">Ceo & Founder</h4>
+
+                <!-- Profile -->
+                <div class="text-center mt-5">
+                  <div class="col-4 col-sm-3 mx-auto mb-3">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="./Assets/Images/testimonials-1.jpg"
+                      alt="Saul Goodman"
+                    />
+                  </div>
+                  <h3 class="fs-5 mb-1">Saul Goodman</h3>
+                  <p class="text-black-50 mb-0">CEO & Founder</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--! Testimonials section End -->
-      <!--! Contact Section Start -->
-      <section id="contact" class="contact py-5">
+      <!-- Contact Section Start -->
+      <section id="contact" class="contact py-5" data-aos="fade-up">
         <div class="container">
+          <!-- Section Header -->
           <div class="row">
-            <div class="content pb-5">
-              <h2>Contact</h2>
-              <p>
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit.
-              </p>
+            <div class="col-lg-8">
+              <div class="content pb-5">
+                <h2 class="mb-3">Contact</h2>
+                <p class="text-muted">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                  sint consectetur velit.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="info-box bg-white shadow-lg p-4">
-                <div class="info-box-item d-flex">
-                  <i class="bi bi-geo-alt"></i>
+
+          <!-- Contact Content -->
+          <div class="row g-4">
+            <!-- Contact Info -->
+            <div
+              class="col-12 col-lg-5"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="info-box bg-white shadow-lg p-4 h-100">
+                <!-- Contact Items -->
+                <div class="info-box-item d-flex align-items-start mb-4">
+                  <i class="bi bi-geo-alt fs-4 me-3 mt-1"></i>
                   <div class="info-content">
-                    <h3>Address</h3>
-                    <p class="mb-0">A108 Adam Street, New York, NY 535022</p>
+                    <h3 class="fs-5 mb-2">Address</h3>
+                    <p class="mb-0 text-muted">
+                      A108 Adam Street, New York, NY 535022
+                    </p>
                   </div>
                 </div>
-                <div class="info-box-item d-flex">
-                  <i class="bi bi-telephone"></i>
+
+                <div class="info-box-item d-flex align-items-start mb-4">
+                  <i class="bi bi-telephone fs-4 me-3 mt-1"></i>
                   <div class="info-content">
-                    <h3>Call Us</h3>
-                    <p class="mb-0">+1 5589 55488 55</p>
+                    <h3 class="fs-5 mb-2">Call Us</h3>
+                    <p class="mb-0 text-muted">+1 5589 55488 55</p>
                   </div>
                 </div>
-                <div class="info-box-item d-flex">
-                  <i class="bi bi-envelope"></i>
+
+                <div class="info-box-item d-flex align-items-start mb-4">
+                  <i class="bi bi-envelope fs-4 me-3 mt-1"></i>
                   <div class="info-content">
-                    <h3>Email Us</h3>
-                    <p class="mb-0">info@example.com</p>
+                    <h3 class="fs-5 mb-2">Email Us</h3>
+                    <p class="mb-0 text-muted">info@example.com</p>
                   </div>
                 </div>
-                <div class="location">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2sus!4v1741610437407!5m2!1sen!2sus"
-                    width="350"
-                    height="214"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+
+                <!-- Google Map -->
+                <div class="location mt-4">
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2sus!4v1741610437407!5m2!1sen!2sus"
+                      class="w-100"
+                      style="border: 0"
+                      allowfullscreen="true"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-7">
-              <form class="bg-white shadow-lg p-4">
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <label for="name" class="pb-2">Your Name</label>
+
+            <!-- Contact Form -->
+            <div
+              class="col-12 col-lg-7"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <form class="bg-white shadow-lg p-4 h-100">
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6">
+                    <label for="name" class="form-label">Your Name</label>
                     <input
                       type="text"
                       name="name"
@@ -1272,8 +1470,8 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6">
-                    <label for="e-mail" class="pb-2">Your Email</label>
+                  <div class="col-12 col-sm-6">
+                    <label for="e-mail" class="form-label">Your Email</label>
                     <input
                       type="email"
                       name="e-mail"
@@ -1282,8 +1480,8 @@
                       required
                     />
                   </div>
-                  <div class="col-md-12">
-                    <label for="subject" class="pb-2">Subject</label>
+                  <div class="col-12">
+                    <label for="subject" class="form-label">Subject</label>
                     <input
                       type="text"
                       name="subject"
@@ -1292,17 +1490,17 @@
                       required
                     />
                   </div>
-                  <div class="col-md-12">
-                    <label for="message" class="pb-2">Message</label>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
                     <textarea
                       name="message"
                       id="message"
-                      rows="8"
+                      rows="6"
                       class="form-control rounded-0"
                       required
                     ></textarea>
                   </div>
-                  <div class="col-md-12 text-center">
+                  <div class="col-12 text-center">
                     <button
                       type="submit"
                       class="btn text-white py-2 px-4"
@@ -1317,8 +1515,7 @@
           </div>
         </div>
       </section>
-      <!--! Contact Section End -->
-      <!--! footer Section Start  -->
+      <!-- Footer Section Start  -->
       <footer class="border-top border-dark-subtle py-4">
         <div class="container">
           <div class="copy-right text-center">
@@ -1347,19 +1544,24 @@
           </div>
         </div>
       </footer>
-      <!--! footer Section end  -->
-      <!--! Back-to-top -->
-      <a href="#" class="position-fixed back-to-top visible">
+      <!-- Back-to-top Button-->
+      <a
+        href="#"
+        class="position-fixed d-flex justify-content-center align-items-center back-to-top visible"
+      >
         <i class="bi bi-arrow-up text-white"></i>
       </a>
-      <!--! Back-to-top -->
-      <!--! Js File Attachment -->
+      <!-- Core Scripts -->
       <script src="./Assets/Js/bootstrap.bundle.min.js"></script>
-      <!--! Custom Js File Attachment -->
+      <!-- Animation Library -->
       <script src="./Assets/Js/script.js"></script>
-
-      <!--! Main End  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      </script>
     </main>
   </body>
-  <!--! Body End -->
 </html>

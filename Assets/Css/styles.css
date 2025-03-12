@@ -1,309 +1,280 @@
+/*===== GLOBAL STYLES =====*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Raleway", sans-serif;
     }
-}
-
-body {
+  }
+  
+  body {
     font-family: "Roboto", sans-serif;
-}
-
-.header {
+  }
+  
+  /*===== HEADER =====*/
+  .header {
     width: 300px;
     background-color: #040b14;
     padding: 0 15px;
-}
-
-img {
+  }
+  
+  img {
     display: block;
-}
-
-header .profile-img img {
+  }
+  
+  header .profile-img img {
     width: 120px;
     margin: 15px 0;
-    border: 8px solid #292F37;
-}
-
-header .name h1 {
+    border: 8px solid #292f37;
+  }
+  
+  header .name h1 {
     font-size: 24px;
     font-weight: 700;
-}
-
-header .media-links a {
+  }
+  
+  header .media-links a {
     font-size: 16px;
     width: 40px;
     height: 40px;
     display: inline-block;
-    background-color: #1E242C;
+    background-color: #1e242c;
     align-content: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 2px;
     transition: background-color 0.3s, color 0.3s;
-}
-
-header .media-links a i {
+  }
+  
+  header .media-links a i {
     transition: background-color 0.3s;
-}
-
-header .media-links a:hover {
+  }
+  
+  header .media-links a:hover {
     color: white;
-}
-
-header .media-links a:hover .bi-twitter-x {
-    color: #1DA1F2;
-}
-
-header .media-links a:hover .bi-facebook {
-    color: #1877F2;
-}
-
-header .media-links a:hover .bi-instagram {
-    color: #E4405F;
-}
-
-header .media-links a:hover .bi-skype {
-    color: #00AFF0;
-}
-
-header .media-links a:hover .bi-linkedin {
-    color: #0077B5;
-}
-
-nav ul li a {
+  }
+  
+  header .media-links a:hover .bi-twitter-x {
+    color: #1da1f2;
+  }
+  
+  header .media-links a:hover .bi-facebook {
+    color: #1877f2;
+  }
+  
+  header .media-links a:hover .bi-instagram {
+    color: #e4405f;
+  }
+  
+  header .media-links a:hover .bi-skype {
+    color: #00aff0;
+  }
+  
+  header .media-links a:hover .bi-linkedin {
+    color: #0077b5;
+  }
+  
+  /*===== NAVIGATION =====*/
+  nav ul li a {
     display: flex;
     padding: 15px 10px;
     font-family: "Poppins", sans-serif;
     align-items: center;
     color: inherit;
     transition: color 0.3s;
-}
-
-nav ul li a .icon {
+  }
+  
+  nav ul li a .icon {
     font-size: 20px;
     transition: color 0.3s;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     color: rgba(255, 255, 255, 0.599) !important;
-}
-
-
-nav ul li a:hover .bi-house,
-nav ul li a.active .bi-house {
+  }
+  
+  nav ul li a:hover .bi-house,
+  nav ul li a.active .bi-house {
     color: #149ddd;
-}
-
-nav ul li a:hover .bi-person,
-nav ul li a.active .bi-person {
+  }
+  
+  nav ul li a:hover .bi-person,
+  nav ul li a.active .bi-person {
     color: green;
-}
-
-nav ul li a:hover .bi-file-earmark-text,
-nav ul li a.active .bi-file-earmark-text {
+  }
+  
+  nav ul li a:hover .bi-file-earmark-text,
+  nav ul li a.active .bi-file-earmark-text {
     color: red;
-}
-
-nav ul li a:hover .bi-images,
-nav ul li a.active .bi-images {
+  }
+  
+  nav ul li a:hover .bi-images,
+  nav ul li a.active .bi-images {
     color: purple;
-}
-
-nav ul li a:hover .bi-hdd-stack,
-nav ul li a.active .bi-hdd-stack {
+  }
+  
+  nav ul li a:hover .bi-hdd-stack,
+  nav ul li a.active .bi-hdd-stack {
     color: orange;
-}
-
-nav ul li a:hover .bi-menu-button,
-nav ul li a.active .bi-menu-button {
+  }
+  
+  nav ul li a:hover .bi-menu-button,
+  nav ul li a.active .bi-menu-button {
     color: teal;
-}
-
-nav ul li a:hover .bi-envelope,
-nav ul li a.active .bi-envelope {
+  }
+  
+  nav ul li a:hover .bi-envelope,
+  nav ul li a.active .bi-envelope {
     color: yellow;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
     color: white;
-}
-
-main {
+  }
+  
+  /*===== MAIN CONTENT =====*/
+  main {
     width: calc(100% - 300px);
     margin-left: auto;
-}
-
-main .hero .hero-img {
-    background-image: url('../Images/hero-bg.jpg');
+  }
+  
+  main .hero .hero-img {
+    background-image: url("../Images/hero-bg.jpg");
     background-color: #040b144c;
     background-repeat: no-repeat;
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
-}
-
-.hero .hero-content h2 {
+  }
+  
+  .hero .hero-content h2 {
     font-size: 64px;
     font-weight: 700;
-}
-
-.hero .hero-content p {
+  }
+  
+  .hero .hero-content p {
     font-size: 26px;
     font-weight: 400;
     margin-top: 5px;
-
-}
-
-.hero .hero-content p span {
+  }
+  
+  .hero .hero-content p span {
     letter-spacing: 2px;
-}
-
-/* About Section's CSS Start */
-.about .content h2,
-.contact .content h2,
-.services .content h2,
-.testimonials .content h2,
-.portfolio .content h2 {
+  }
+  
+  /*===== ABOUT SECTION =====*/
+  .about .content h2,
+  .contact .content h2,
+  .services .content h2,
+  .testimonials .content h2,
+  .portfolio .content h2,
+  .skills .content h2,
+  .resume .content h2 {
     font-size: 32px;
     font-weight: 700;
-    /* padding-bottom: 10px; */
-}
-
-.about .content h2::after,
-.skills .content h2::after,
-.resume .content h2::after,
-.contact .content h2::after,
-.services .content h2::after,
-.testimonials .content h2::after,
-.portfolio .content h2::after {
+  }
+  
+  .about .content h2::after,
+  .skills .content h2::after,
+  .resume .content h2::after,
+  .contact .content h2::after,
+  .services .content h2::after,
+  .testimonials .content h2::after,
+  .portfolio .content h2::after {
     content: "";
     display: block;
     width: 50px;
     height: 3px;
     background-color: #149ddd;
     margin-top: 20px;
-}
-
-.about .about-content h2 {
+  }
+  
+  .about .about-content h2 {
     font-size: 24px;
     font-weight: 700;
-}
-
-.about .about-content .row ul li i {
+  }
+  
+  .about .about-content .row ul li i {
     color: #149ddd !important;
-}
-
-/* About Section's CSS End */
-/* Info section's CSS Start */
-.info-section .info-box i {
+  }
+  
+  /*===== INFO SECTION =====*/
+  .info-section .info-box i {
     font-size: 45px;
     color: #149ddd;
-}
-
-.info-section .info-box .count {
+  }
+  
+  .info-section .info-box .count {
     font-size: 48px;
     font-weight: 700;
-}
-
-.info-section .info-box .count-content {
+  }
+  
+  .info-section .info-box .count-content {
     font-size: 15px;
     font-family: "Raleway", sans-serif;
     margin-left: 60px;
-}
-
-/* Info section's CSS End */
-
-/* Skills section's CSS Start */
-.skills {
+  }
+  
+  /*===== SKILLS SECTION =====*/
+  .skills {
     background-color: #f4fafd;
-}
-
-.skills .content h2,
-.resume .content h2 {
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.skills .progress-bar {
+  }
+  
+  .skills .progress-bar {
     background-color: #149ddd;
-}
-
-.skills .progress-box {
+  }
+  
+  .skills .progress-box {
     height: 62px;
-}
-
-.skills .progress-box .progress-count span {
+  }
+  
+  .skills .progress-box .progress-count span {
     font-size: 12px;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Skills section's CSS End */
-
-/* Resume section's CSS Start */
-.resume .title h3 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*===== RESUME SECTION =====*/
+  .resume .title h3 {
     font-size: 26px;
     font-weight: 700;
-}
-
-.resume .resume-box h4 {
+  }
+  
+  .resume .resume-box h4 {
     font-size: 18px;
     font-weight: 600;
     color: #464e57;
-}
-
-.resume .resume-box {
+  }
+  
+  .resume .resume-box {
     border-left: 2px solid #149ddd;
-    /* padding: 0 0 20px 20px; */
-    /* margin-top: -2px; */
-}
-
-.resume .resume-box::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #149ddd;
-    background-color: white;
-    top: 0;
-    left: -9px;
-}
-
-.resume .resume-box h5 {
+  }
+  
+  .resume .resume-box h5 {
     font-size: 16px;
     font-weight: 600;
-}
-
-/* Resume section's CSS End */
-/* Portfolio Styles */
-.portfolio-item {
+  }
+  
+  /*===== PORTFOLIO =====*/
+  .portfolio-item {
     overflow: hidden;
     border-radius: 4px;
-}
-
-.portfolio-item img {
+  }
+  
+  .portfolio-item img {
     transition: all 0.4s ease;
-}
-
-.portfolio-item:hover img {
+  }
+  
+  .portfolio-item:hover img {
     transform: scale(1.1);
-}
-
-.portfolio-overlay {
+  }
+  
+  .portfolio-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -316,71 +287,69 @@ main .hero .hero-img {
     align-items: center;
     opacity: 0;
     transition: all 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-overlay {
+  }
+  
+  .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
-}
-
-.portfolio-icons {
+  }
+  
+  .portfolio-icons {
     margin-bottom: 1rem;
-}
-
-.portfolio-icons .btn {
+  }
+  
+  .portfolio-icons .btn {
     width: 38px;
     height: 38px;
     padding: 0;
     line-height: 38px;
     border-radius: 50%;
     transition: all 0.3s ease;
-}
-
-.portfolio-icons .btn:hover {
+  }
+  
+  .portfolio-icons .btn:hover {
     background-color: #149ddd;
     color: white;
-}
-
-.badge {
+  }
+  
+  .badge {
     z-index: 1;
     font-weight: 500;
     letter-spacing: 0.5px;
-}
-
-/* Modal Styles */
-.modal-content {
+  }
+  
+  /*===== MODAL STYLES =====*/
+  .modal-content {
     background: rgba(0, 0, 0, 0.9);
-}
-
-.modal-header {
+  }
+  
+  .modal-header {
     position: absolute;
     right: 0;
     z-index: 2;
-}
-
-.btn-close {
+  }
+  
+  .btn-close {
     background-color: white;
     opacity: 0.8;
-}
-
-.carousel-item img {
+  }
+  
+  .carousel-item img {
     max-height: 90vh;
     width: auto;
     margin: 0 auto;
-}
-
-/* services section start */
-/* services section start  */
-
-.services .box-content h4 {
+  }
+  
+  /*===== SERVICES SECTION =====*/
+  .services .box-content h4 {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
-}
-
-.services .boxes .icon i {
+  }
+  
+  .services .boxes .icon i {
     width: 50px;
     height: 50px;
-    background: #149DDD;
+    background: #149ddd;
     border-radius: 50%;
     font-size: 24px;
     color: #fff;
@@ -390,53 +359,47 @@ main .hero .hero-img {
     flex-shrink: 0;
     padding: 15px;
     transition: 0.5s;
-}
-
-.services .boxes .icon:hover i {
+  }
+  
+  .services .boxes .icon:hover i {
     background-color: #fff;
-    border: 1px solid #149DDD;
-    color: #149DDD;
-}
-
-.services .boxes .icon .box-content h4 a {
+    border: 1px solid #149ddd;
+    color: #149ddd;
+  }
+  
+  .services .boxes .icon .box-content h4 a {
     text-decoration: none;
     color: #040b14;
-    transition: all .3s ease-in-out;
-}
-
-.services .boxes .icon:hover .box-content a {
-    color: #149DDD;
-}
-
-/* services section end */
-
-/* testimonial start  */
-
-.testimonial-content {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .boxes .icon:hover .box-content a {
+    color: #149ddd;
+  }
+  
+  /*===== TESTIMONIAL SECTION =====*/
+  .testimonial-content {
     text-align: justify;
     padding: 10px 20px;
-}
-
-.testimonials .container .text-content h3 {
+  }
+  
+  .testimonials .container .text-content h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 5px;
-}
-
-.testimonials .container .text-content h4 {
+  }
+  
+  .testimonials .container .text-content h4 {
     font-size: 14px;
     font-weight: medium;
-}
-
-/* testimonial end  */
-
-/* Contact section's CSS start */
-
-.contact .info-box-item {
+  }
+  
+  /*===== CONTACT SECTION =====*/
+  .contact .info-box-item {
     margin-bottom: 40px;
-}
-
-.contact .info-box-item i {
+  }
+  
+  .contact .info-box-item i {
     font-size: 20px;
     color: #149ddd;
     background-color: rgba(20, 157, 221, 0.08);
@@ -448,32 +411,30 @@ main .hero .hero-img {
     align-items: center;
     margin-right: 15px;
     transition: all 0.3s ease;
-}
-
-.contact .info-content h3 {
+  }
+  
+  .contact .info-content h3 {
     font-size: 18px;
     font-weight: 700;
-}
-
-.contact .info-content p {
+  }
+  
+  .contact .info-content p {
     font-size: 14px;
-}
-
-.contact .info-box-item:hover i {
-    background-color: #149DDD;
+  }
+  
+  .contact .info-box-item:hover i {
+    background-color: #149ddd;
     color: white;
-}
-
-/* Contact section's CSS end */
-/* footer section's CSS start */
-footer .copy-right p,
-footer .designed-by p {
-    font-size: 14px
-}
-
-/* footer section's CSS end */
-.back-to-top {
-    position: fixed;
+  }
+  
+  /*===== FOOTER =====*/
+  footer .copy-right p,
+  footer .designed-by p {
+    font-size: 14px;
+  }
+  
+  /*===== BACK TO TOP =====*/
+  .back-to-top {
     right: 15px;
     bottom: 15px;
     background-color: #149ddd;
@@ -483,11 +444,9 @@ footer .designed-by p {
     transition: all 0.4s ease;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.back-to-top:hover {
+  }
+  
+  .back-to-top:hover {
     background-color: #1280b4;
     transform: translateY(-3px);
-}
+  }

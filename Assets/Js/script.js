@@ -1,59 +1,54 @@
-document.querySelectorAll(".portfolio-item").forEach((item, index) => {
-  item.addEventListener("click", () => {
-    const carousel = document.querySelector("#portfolioCarousel");
-    const bsCarousel = new bootstrap.Carousel(carousel);
-    bsCarousel.to(index);
-  });
-});
-
-// Function to handle active nav links based on scroll position
+// Handle navigation active states
 function handleNavigation() {
-  // Get all sections that have an ID defined
   const sections = document.querySelectorAll("section[id]");
-  // Get all nav links
-  const navLinks = document.querySelectorAll(".list-unstyled li a");
+  const navLinks = document.querySelectorAll("nav ul li a[href^='#']");
 
-  // Add scroll event listener
   window.addEventListener("scroll", () => {
-    // Get current scroll position
-    let scrollY = window.scrollY;
+      let current = "";
+      
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+          
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+              current = section.getAttribute("id");
+          }
+      });
 
-    // Loop through sections to get height, top and ID values
-    sections.forEach((section) => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 100;
-      const sectionId = section.getAttribute("id");
-
-      // Check if we've scrolled to the section
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        // Remove active class from all links
-        navLinks.forEach((link) => {
+      navLinks.forEach(link => {
           link.classList.remove("active");
-        });
-        // Add active class to corresponding nav link
-        document
-          .querySelector(`.list-unstyled li a[href*=${sectionId}]`)
-          ?.classList.add("active");
-      }
-    });
+          if (link.getAttribute("href").substring(1) === current) {
+              link.classList.add("active");
+          }
+      });
   });
+}
 
-  // Handle click events
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: "smooth",
-        });
-      }
-    });
+// Handle dropdown menu interactions
+function initializeDropdowns() {
+  const dropdownItems = document.querySelectorAll('.dropdown');
+  
+  dropdownItems.forEach(item => {
+      // Show dropdown on hover
+      item.addEventListener('mouseenter', () => {
+          const dropdownMenu = item.querySelector('.dropdown-menu');
+          if (dropdownMenu) {
+              dropdownMenu.classList.add('show');
+          }
+      });
+      
+      // Hide dropdown when mouse leaves
+      item.addEventListener('mouseleave', () => {
+          const dropdownMenu = item.querySelector('.dropdown-menu');
+          if (dropdownMenu) {
+              dropdownMenu.classList.remove('show');
+          }
+      });
   });
 }
 
 // Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", handleNavigation);
+document.addEventListener('DOMContentLoaded', () => {
+  handleNavigation();
+  initializeDropdowns();
+});
